@@ -1,5 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+   
+}
 header {
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./img/heroflower.jpg"); 
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./img/hero3.png"); 
   background-size: cover; 
   background-position: center;
   background-attachment: fixed;
@@ -7,9 +13,13 @@ header {
   height: 100vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: rgba(0,0,0,0.5);
     color: white;
@@ -17,7 +27,7 @@ header {
 }
 
 .logo {
-    margin-right: 20px;
+    margin-right: 20px; 
     font-size: 24px;
     font-weight: bold;
   
@@ -44,9 +54,9 @@ nav a {
 .book-now {
   background-color: transparent;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 10px;
-  border: 1px solid rgb(199, 212, 75);
+  border: 1px solid rgb(138, 89, 25);
   font-weight: bold;
 
 }
@@ -54,18 +64,16 @@ nav a {
 .header-text {
     display: flex;
     flex-direction: column;
-    text-align: start;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgba(0,0,0,0.5);
+    /* background-color: rgba(0,0,0,0.5); */
     color: white;
     gap: 10px;
     width: 40%;
     height: 35%;
     margin: auto;
-    margin-top: 150px;
-    border-radius: 20px;
+    margin-top: 150px
 }
 
 .header-text h1 {
@@ -77,41 +85,152 @@ nav a {
 
 .header-text p {
   font-size: 15px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header a:hover {
-  color: rgb(199, 212, 75);
+  color: rgb(138, 89, 25);
 }
 
-.follow-ig a {
-  color: white;
-  margin: 20px;
-}
 
 
 .gallery {
   padding: 60px 40px;
-  background-color: white;
+  width: 90%;
+  /* margin: 0 20px; */
+  overflow: hidden;
+  gap: 10px;
 }
 
-.gallery h3 {
+.gallery h2 {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 20px;
+  color: black;
   font-size: 30px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.zoom {
+  transition: transform 0.5s ease;
+
+}
+
+.zoom:hover {
+  transform: scale(0.8);
+}
+
+
 .photo-grid {
 display: grid;
-justify-content: center;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+grid-template-columns: repeat(5, 1fr);
 gap: 10px;
+justify-items: center;
 }
 
 .photo-grid img {
-  width: 100%;
+  width: 230px;
   height: auto;
-  display: block;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: justify;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.about img {
+  width: 30%;
+  margin-left: 100px;
+  border-radius: 10px;
+
+}
+
+.my-about {
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 65%;
+  font-size: 25px;
+  background-color: rgb(48, 61, 28);
+  padding: 0 2rem;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+}
+
+.contact-con {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-con h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.contact-con p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form textarea {
+  padding: 15px;
+  border: 1px solid red;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.contact-form button {
+  background-color: greenyellow;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: green;
+  border-radius: 20px 20px;
+  border: 0.5px solid;
+}
+
+footer {
+  background-color: rgb(48, 61, 28);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.social-icons img {
+  width: 50px;
+  height: 50px;
+  filter: brightness(0) invert(2);
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
 }
