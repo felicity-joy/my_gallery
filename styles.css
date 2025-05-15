@@ -136,6 +136,11 @@ justify-items: center;
   border-radius: 10px;
 }
 
+.about-section{
+      width: 80%;
+    margin: auto;
+}
+
 .about {
   display: flex;
   justify-content: center;
