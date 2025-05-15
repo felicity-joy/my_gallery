@@ -1,0 +1,117 @@
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./img/heroflower.jpg"); 
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed;
+  color: white; 
+  height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  
+}
+
+.nav-items ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.nav-items ul li {
+    margin-left: 20px;
+    
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+    
+}
+
+.book-now {
+  background-color: transparent;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgb(199, 212, 75);
+  font-weight: bold;
+
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    gap: 10px;
+    width: 40%;
+    height: 35%;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 20px;
+}
+
+.header-text h1 {
+  margin: 0rem;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header-text p {
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header a:hover {
+  color: rgb(199, 212, 75);
+}
+
+.follow-ig a {
+  color: white;
+  margin: 20px;
+}
+
+
+.gallery {
+  padding: 60px 40px;
+  background-color: white;
+}
+
+.gallery h3 {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.photo-grid {
+display: grid;
+justify-content: center;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 10px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
