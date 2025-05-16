@@ -31,6 +31,7 @@ html {
     margin-right: 20px; 
     font-size: 24px;
     font-weight: bold;
+    font-style: oblique;
   
 }
 
@@ -57,7 +58,7 @@ nav a {
   color: white;
   padding: 0.5rem 0.5rem;
   border-radius: 10px;
-  border: 1px solid rgb(138, 89, 25);
+  border: 2px solid rgb(138, 89, 25);
   font-weight: bold;
 
 }
