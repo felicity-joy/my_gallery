@@ -67,7 +67,6 @@ nav a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* background-color: rgba(0,0,0,0.5); */
     color: white;
     gap: 10px;
     width: 40%;
@@ -108,7 +107,7 @@ header a:hover {
   margin-bottom: 20px;
   color: black;
   font-size: 30px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .zoom {
@@ -137,7 +136,7 @@ justify-items: center;
 }
 
 .about-section{
-      width: 80%;
+    width: 80%;
     margin: auto;
 }
 
@@ -161,68 +160,36 @@ justify-items: center;
   margin-right: 50px;
   width: 65%;
   font-size: 25px;
-  background-color: rgb(48, 61, 28);
+  background-color: rgb(49, 65, 26);
   padding: 0 2rem;
   border-radius: 10px;
-  color: black;
+  color: white;
   text-align: center;
 }
 
-.contact-con {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
+.my-about h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.contact-con h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: white;
-  font-weight: bold;
+.my-about h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.contact-con p {
-  font-size: 16px;
-  margin-bottom: 30px;
-  color: black;
+.my-about p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-form textarea {
-  padding: 15px;
-  border: 1px solid red;
-  border-radius: 10px;
-  font-size: 16px;
-  width: 100%;
-}
-
-.contact-form button {
-  background-color: greenyellow;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background-color: green;
-  border-radius: 20px 20px;
-  border: 0.5px solid;
-}
 
 footer {
-  background-color: rgb(48, 61, 28);
+  background-color: rgb(17, 26, 17);
   color: white;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+.my-footer p{
+  font-style: italic;
 }
 
 .social-icons a {
